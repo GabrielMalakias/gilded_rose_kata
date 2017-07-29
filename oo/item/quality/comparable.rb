@@ -5,7 +5,7 @@ module OO
 
         MAX_QUALITY = 50
 
-        def reaches_max_quality?(item)
+        def not_reaches_max_quality?(item)
           item.quality < MAX_QUALITY
         end
 

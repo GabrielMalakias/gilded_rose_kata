@@ -1,8 +1,7 @@
 # The Gilded Rose Code Kata
 
 This is a Ruby version of the Gilded Rose Kata, found
-[here](http://www.iamnotmyself.com/2011/02/13/RefactorThisTheGildedRoseKata.aspx
-I Am Not Myself).
+[here](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/).
 
 This is a refactorying kata, so you will be starting with a legacy
 code base.  To work the Kata, clone this git repository and checkout
@@ -14,18 +13,33 @@ involving this kata.
 This Ruby version follows the original code very closely, but has the
 following changes:
 
-* The original had no tests.  Since this is a refactoring kata, I felt
-  the tests were important and provide a fairly complete test suite.
+* The original had no tests.  Since this is a refactoring kata, I feel
+  the tests are important and provide a fairly complete test suite.
   Just delete the tests if you wish to "go it alone".
 
 * The original used a hard coded set of "items", presumably for
-  testing the code.  Since I a test suite, the hard coded values were
-  not of much use.  I also changed the interface to accept a list of
+  testing the code.  Since I added a test suite, the hard coded values
+  were not of much use.  I also changed the interface to accept a list of
   items as a parameter rather than a hard coded constant.
 
 You can read
-[the original kata article](http://www.iamnotmyself.com/2011/02/13/RefactorThisTheGildedRoseKata.aspx
-I Am Not Myself) for more details.
+[the original kata article](http://iamnotmyself.com/2011/02/13/refactor-this-the-gilded-rose-kata/) for more details.
+
+## Installation Hints
+
+The easiest way is to use bundler to install the dependencies. To do so, you need to install the bundler gem if you haven't already done so
+
+    gem install bundler
+
+run bundler
+
+    bundle
+
+and should be ready to go. Alternatively, you can install the dependencies one by one using gem install, e.g.
+
+    gem install rspec-given
+
+Have a look at the Gemfile for all dependencies.
 
 ## Git Branches
 
@@ -40,7 +54,7 @@ Hope you enjoy this.     -- Jim Weirich
 # Original Description of the Gilded Rose
 
 Hi and welcome to team Gilded Rose. As you know, we are a small inn
-with a prime location in a prominent city ran by a friendly innkeeper
+with a prime location in a prominent city run by a friendly innkeeper
 named Allison. We also buy and sell only the finest
 goods. Unfortunately, our goods are constantly degrading in quality as
 they approach their sell by date. We have a system in place that
