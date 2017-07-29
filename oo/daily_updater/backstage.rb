@@ -1,7 +1,7 @@
 module OO
   class DailyUpdater::Backstage < DailyUpdater::Base
     def update
-      if reaches_max_quality?(item)
+      if not_reaches_max_quality?(item)
         increase_quality!(item)
 
         if medium_upper_close_to_sell_date?(item)
